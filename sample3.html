@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array in Table Format</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #cccdeb;
+        }
+        .table-container {
+            
+            
+            color: rgb(255, 255, 255);
+            background-color: #7d7dca;
+            width: 90%;
+            
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        th, td {
+            
+            padding: 18px;
+            text-align: left;
+        }
+        th {
+            color: rgb(255, 255, 255);
+        }
+       
+    </style>
+</head>
+<body>
+    <div class="table-container">
+        <h3>Array Data in Table</h3>
+        <table id="dataTable">
+            <thead>
+                <tr>
+                    <th>Index</th>
+                    <th>Value</th>
+                </tr>
+            </thead>
+            <tbody>
+         
+            </tbody>
+        </table>
+    </div>
+
+    <script>
+        
+        const myArray = ["John", "Jane", "Michael", "Sarah", "David"];
+
+        const tableBody = document.getElementById('dataTable').getElementsByTagName('tbody')[0];
+
+
+        myArray.forEach((value, index) => {
+            const row = tableBody.insertRow(); 
+
+          
+            const indexCell = row.insertCell(0);
+            indexCell.textContent = index; 
+
+           
+            const valueCell = row.insertCell(1);
+            valueCell.textContent = value;
+        });
+    </script>
+</body>
+</html>
