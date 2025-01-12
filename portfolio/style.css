@@ -1,0 +1,713 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background: #f5f5f5;
+    color: #333;
+}
+
+/* Header and Navigation Styling */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 150px;
+    height: 100%;
+    background: linear-gradient(to right, #67dcb5, #5c99b9);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 1.5rem;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    border-radius: 40px;
+    transition: background 0.3s;
+}
+
+nav a:hover {
+    background: #39968e;
+}
+
+
+
+
+
+/* About Me Section */
+#about {
+    margin-left: 100px; /* Adjust to account for the fixed header */
+    padding: 0.5rem;
+    background: #e3fffc;
+    min-height: 100vh;
+    margin-left: 150px;
+}
+/* About Section Title */
+#about h2 {
+    font-size: 2rem;
+    color: #3192c7;
+    margin-bottom: 1rem;
+    text-align: center;
+    border-bottom: 2px solid #000000; /* Adds a blue line below the heading */
+    padding-bottom: 0.5rem; /* Adds space between the text and the line */
+}
+
+/* About Section Container */
+.about-container {
+    text-align: center; /* Center the content */
+    max-width: 800px; /* Limit the width to make the content more readable */
+    margin: 0 auto; /* Center the container horizontally */
+}
+
+/* Style for the Download CV Link */
+/* Style for the Download CV Link */
+.download-cv {
+    text-decoration: none; /* Removes underline from the link */
+    display: block; /* Makes the link take up the full width */
+    margin-top: 20px; /* Adds space between paragraph and button */
+    width: 100%; /* Makes the button container take full width */
+    text-align: center; /* Centers the button inside the link */
+}
+
+/* Style for the Download CV Button */
+.download-cv button {
+    background: linear-gradient(to right, #67dcb5, #5c99b9); /* Green background with gradient */
+    color: #fff; /* White text color */
+    padding: 5px 10px; /* Padding for the button */
+    border: none; /* Removes border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Changes cursor to pointer on hover */
+    font-size: 16px; /* Font size */
+    transition: background 0.3s ease; /* Transition for background change */
+    margin-right: 300px; /* Margin for right side */
+}
+
+/* Hover effect - change the gradient when hovered */
+.download-cv button:hover {
+    background: #8ec8e3; /* Modify gradient on hover */
+}
+
+
+
+
+.about-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 1.5rem;
+}
+
+.about-container p {
+    flex: 2;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    text-align: left;
+    
+}
+
+.about-container img {
+    flex: 1;
+    max-width: 250px;
+    border-radius: 15px;
+    box-shadow: 0 4px 9px #4e92df;
+    margin-right: 10px;
+    margin-bottom: 4px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+    nav {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    #about {
+        margin-left: 0;
+    }
+
+    .about-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+/* Contact Section */
+
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+/* Contact Section */
+#contact {
+    margin-left: 150px;
+    padding: 0.8rem; /* Further reduced padding */
+    background: #e3fffc;
+    min-height: 100vh;
+    text-align: center;
+}
+
+/* Contact Section Title */
+#contact h2 {
+    font-size: 1.5rem; /* Much smaller title */
+    color: #3192c7;
+    margin-bottom: 0.2rem; /* Less margin */
+    text-align: center;
+    border-bottom: 2px solid #000000;
+    padding-bottom: 0.2rem; /* Less padding */
+}
+
+/* Contact Form Container */
+.contact-container {
+    max-width: 600px;
+    margin: 0.8rem auto; /* Reduced margin */
+    padding: 0.3rem; /* Less padding */
+    background: #e8fefe;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Form Group Styling */
+.form-group {
+    margin-bottom: 0.5rem; /* Less margin */
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Form Group Label */
+.form-group label {
+    font-size: 1rem; /* Smaller label font */
+    margin-bottom: 0.1rem; /* Minimal margin */
+    color: #3192c7;
+}
+
+/* Form Fields (input and textarea) */
+.form-group input,
+.form-group textarea {
+    width:95%;
+    padding: 0.3rem; /* Smaller padding */
+    font-size: 0.7rem; /* Even smaller font size */
+    border: 1px solid #555;
+    border-radius: 4px;
+    outline: none;
+    transition: border-color 0.3s, box-shadow 0.3s;
+    background: #e8fefe;
+    height: 20px; /* Smaller height */
+    box-sizing: border-box;
+    margin-left: 20px;
+}
+
+/* Textarea */
+.form-group textarea {
+    height: auto;
+    min-height: 30px; /* Smaller minimum height */
+    resize: vertical;
+}
+
+/* Focus Effects */
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #67dcb5;
+    box-shadow: 0 0 3px #67dcb5;
+}
+
+/* Submit Button */
+#contact-form button {
+    padding: 0.3rem 0.8rem; /* Reduced padding */
+    font-size: 0.7rem; /* Smaller font size */
+    background: linear-gradient(to right, #67dcb5, #5c99b9);
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+    width: 95%;
+    height: 30px; /* Smaller height */
+    margin-left: 13px;
+}
+
+#contact-form button:hover {
+    background: #8ec8e3;
+    transform: translateY(-1px);
+}
+
+/* Reach Out Section */
+.reach-out {
+    margin-top: 0.8rem; /* Smaller margin */
+    text-align: left;
+    background: #e8fefe;
+    padding: 0.6rem; /* Smaller padding */
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 0.8rem auto;
+}
+
+.reach-out h3 {
+    font-size: 1.1rem; /* Smaller font size */
+    margin-bottom: 0.3rem; /* Less margin */
+    color: #3192c7;
+}
+
+.reach-out ul {
+    list-style: none;
+    padding: 0;
+}
+
+.reach-out li {
+    font-size: 0.7rem; /* Smaller font size */
+    margin: 0.3rem 0; /* Less margin */
+    color: #000;
+}
+
+.reach-out li a {
+    color: #3c9c7b;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.reach-out li a:hover {
+    color: #0c7852;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #contact {
+        margin-left: 0;
+        padding: 0.6rem;
+    }
+
+    .contact-container {
+        width: 90%;
+    }
+
+    .reach-out {
+        width: 90%;
+    }
+}
+
+
+
+/* Projects Section */
+#projects {
+    margin-left: 150px; /* Adjust to account for the fixed header */
+    padding: 2.5rem;
+    background: #e3fffc;
+    min-height: 100vh;
+}
+
+#projects h2 {
+    font-size: 2rem;
+    color: #3192c7;
+    margin-bottom: 1rem;
+    text-align: center;
+    border-bottom: 2px solid #000000;
+}
+
+#projects p {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    color: #000000;
+}
+
+/* Project Container */
+.project-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1.5rem;
+    padding: 1rem;
+}
+
+.project {
+    background-color:#e8fefe;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.project h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.8rem;
+    color: #3192c7;
+}
+
+.project p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 1rem;
+}
+
+.project a {
+    text-decoration: none;
+    color: #3192c7;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.project a:hover {
+    color: #0a6aa9;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+    nav {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    #projects {
+        margin-left: 0;
+        padding: 1rem;
+    }
+
+    .project-container {
+        grid-template-columns: 1fr; /* Stack projects in one column on small screens */
+    }
+
+    #projects h2 {
+        font-size: 1.5rem;
+    }
+
+    #projects p {
+        font-size: 1rem;
+    }
+}
+
+/* Main Project Details Section */
+.project-detail {
+    max-width: 800px;
+    background: #e3fffc;
+    padding: 2rem;
+    margin: 0px;
+    border-radius: 0px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    margin-left: 150px;
+    
+}
+
+/* Section Title Styling */
+.project-detail h2 {
+    font-size: 2rem;
+    color: #000000;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+/* Paragraph Styling */
+.project-detail p {
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #000000;
+}
+
+/* Subheading Styling */
+.project-detail h3 {
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+    color: #000000;
+}
+
+/* List Styling */
+.project-detail ul {
+    margin-left: 1.5rem;
+    list-style-type: disc;
+}
+
+.project-detail ul li {
+    margin-bottom: 0.8rem;
+    font-size: 1.1rem;
+    color: #000000;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .project-detail {
+        padding: 1.5rem;
+    }
+
+    .project-detail h2 {
+        font-size: 1.8rem;
+    }
+
+    .project-detail h3 {
+        font-size: 1.3rem;
+    }
+
+    .project-detail ul li {
+        font-size: 1rem;
+    }
+}
+
+/* Skills Section */
+#skills {
+    margin-left: 150px; /* Adjust to account for the fixed header */
+    padding: 2.25rem;
+    background: #e3fffc;
+    min-height: 100vh;
+}
+
+#skills h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 1rem;
+    text-align: center;
+    border-bottom: 2px solid #000000;
+}
+
+#skills p {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    color: #555;
+}
+
+/* Skills Container */
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1.5rem;
+    padding: 0.5rem;
+}
+
+/* Skill Card */
+.skill {
+    background-color: #e8fefe;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.skill:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.skill h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.8rem;
+    color: #3192c7;
+}
+
+.skill ul {
+    list-style: none;
+    padding: 0;
+}
+
+.skill ul li {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 0.5rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #skills {
+        margin-left: 0;
+        padding: 1rem;
+    }
+
+    .skills-container {
+        grid-template-columns: 1fr; /* Stack skill cards in one column on small screens */
+    }
+
+    #skills h2 {
+        font-size: 1.5rem;
+    }
+
+    #skills p {
+        font-size: 1rem;
+    }
+
+    .skill h3 {
+        font-size: 1.3rem;
+    }
+
+    .skill ul li {
+        font-size: 0.95rem;
+    }
+}
+
+
+/* Basic styling for the certification page */
+#certifications {
+    margin-left: 150px; /* Adjust to account for the fixed header */
+    padding: 2.25rem;
+    background: #e3fffc;
+    min-height: 100vh;
+    
+}
+
+#certifications h2 {
+    font-size: 2.5rem;
+    color: #3192c7;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #3192c7;
+    padding-bottom: 0.5rem;
+}
+
+.certificates-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1.5rem;
+    padding: 0.5rem; 
+       
+}
+
+.certificate {
+    background: #e8fefe;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.certificate h3 {
+    font-size: 1.8rem;
+    color: #3192c7;
+    margin-bottom: 1rem;
+}
+
+.certificate p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 0.5rem;
+    
+}
+
+.certificate a {
+    color: #3192c7;
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+.certificate a:hover {
+    color: #0a6aa9;
+}
+
+/* Modal Styles */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8); /* Black background with transparency */
+}
+
+.modal-content {
+    position: relative;
+    margin: auto;
+    top: 50%;
+    transform: translateY(-50%);
+    max-width: 80%;
+}
+
+#certificate-img {
+    width: 50%;
+    height: 350px;
+    border-radius: 8px;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    #certifications {
+        padding: 1rem;
+    }
+
+    .certificates-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Thank You Page Styles */
+.thank-you {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centers the content vertically */
+    align-items: center; /* Centers the content horizontally */
+    text-align: center;
+    padding: 2.5rem;
+    background: #e3fffc;
+    min-height: 100vh; /* Ensures full viewport height */
+    margin-left: 150px;
+}
+
+.thank-you h2 {
+    font-size: 36px;
+    color: #3192c7;
+    margin-bottom: 20px;
+}
+
+.thank-you p {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+nav a {
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}

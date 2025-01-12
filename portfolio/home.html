@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio Homepage</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to right, #67dcb5, #5c99b9);
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      overflow: hidden;
+    }
+
+    .header {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .header h1 {
+      font-size: 2.7em;
+      color: #03291e;
+    }
+
+    .header .line {
+      width: 100%;
+      height: 3px;
+      background-color: #141414;
+      margin: 10px auto 0;
+      border-radius: 5px;
+    }
+
+    .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 125%;
+      max-width: 1200px;
+      margin-top: 50px;
+      margin-left: 300px;
+    }
+
+    .content {
+      max-width: 50%;
+    }
+
+    p {
+      margin: 0 0 20px;
+      line-height: 1.6;
+      color: #03291e;
+    }
+
+    .next-page-btn {
+      display: inline-flex;
+      align-items: center;
+      background-color: #cce7e5;
+      color: rgb(51, 84, 115);
+      padding: 10px 20px;
+      font-size: 1.1em;
+      text-decoration: none;
+      border-radius: 200px;
+      transition: background-color 0.3s ease, transform 0.3s ease;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+      cursor: pointer;
+    }
+
+    .next-page-btn:hover {
+      background-color: #a1e2dc;
+      transform: scale(1.05);
+    }
+
+    .next-page-btn img {
+      width: 25px;
+      height: 25px;
+      margin-left: 10px;
+    }
+
+    .image {
+      max-width: 45%;
+      text-align: center;
+      margin-right: 300px;
+    }
+
+    .image img {
+      width: 260%;
+      max-width: 260px;
+      height: 260px;
+    }
+
+    /* Curtain Styling */
+    .curtain {
+      position: fixed;
+      width: 50%;
+      height: 100%;
+      top: 0;
+      background: linear-gradient(45deg, #71cce5, #45dad7);
+      z-index: 10;
+      transform-origin: center;
+      transform: scaleX(0);
+    }
+
+    .curtain.left {
+      left: 0;
+      transform-origin: left;
+    }
+
+    .curtain.right {
+      right: 0;
+      transform-origin: right;
+    }
+
+    @keyframes closeCurtains {
+      0% {
+        transform: scaleX(0);
+      }
+      100% {
+        transform: scaleX(1);
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Top Center Header -->
+  <div class="header">
+    <h1>Welcome to My Portfolio</h1>
+    <div class="line"></div>
+  </div>
+
+  <div class="container">
+    <!-- Left Content -->
+    <div class="content">
+      <h1>AJAYARAVIND PS</h1>
+      <p> Im a Computer Science and Engineering (CSE) student currently pursuing a Bachelor of Engineering (B.E.). Im passionate about learning programming languages and exploring various fields in technology. </p>
+      <button class="next-page-btn" onclick="triggerCurtainTransition()">
+        Know More About Me
+        <img src="songwriter.png" alt="Next Arrow">
+      </button>
+    </div>
+    <!-- Right Image -->
+    <div class="image">
+      <img src="home.png" alt="Profile Picture">
+    </div>
+  </div>
+
+  <!-- Curtains -->
+  <div class="curtain left"></div>
+  <div class="curtain right"></div>
+
+  <script>
+    function triggerCurtainTransition() {
+      // Get the curtain elements
+      const leftCurtain = document.querySelector('.curtain.left');
+      const rightCurtain = document.querySelector('.curtain.right');
+
+      // Add animation to close curtains
+      leftCurtain.style.animation = 'closeCurtains 1s forwards';
+      rightCurtain.style.animation = 'closeCurtains 1s forwards';
+
+      // Wait for the curtain animation to complete, then navigate to index.html
+      setTimeout(() => {
+        window.location.href = 'index.html';
+      }, 1000); // Match this to the animation duration
+    }
+  </script>
+</body>
+</html>
