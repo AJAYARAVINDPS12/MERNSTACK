@@ -1,35 +1,65 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import React, { useState } from 'react';
+import './App.css';
 
-function App() {
-  const [count, setCount] = useState(0)
+const App = () => {
+  const [trackEmployee, setTrackEmployee] = useState(false);
+
+  const handleViewClick = () => {
+    alert('Viewing Employees');
+  };
+
+  const handleAddClick = () => {
+    alert('Adding a New Employee');
+  };
+
+  const handleRemoveClick = () => {
+    alert('Removing an Employee');
+  };
+
+  const handleTrackClick = () => {
+    setTrackEmployee(true);
+  };
 
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
-}
+    <div className="app">
+      <header className="app-header">
+        <h1>Employee Attendance Tracker</h1>
+      </header>
+      <main>
+        <section className="features">
+          <div className="manage-employees">
+            <h2>Manage Employees</h2>
 
-export default App
+            {/* Individual Buttons */}
+            <button onClick={handleViewClick} className="option-button">
+              View Employees
+            </button>
+            <button onClick={handleAddClick} className="option-button">
+              Add Employee
+            </button>
+            <button onClick={handleRemoveClick} className="option-button">
+              Remove Employee
+            </button>
+            <button onClick={handleTrackClick} className="option-button track-button">
+              Track Employee
+            </button>
+          </div>
+
+          {/* Track Employee Section */}
+          {trackEmployee && (
+            <div className="track-employee">
+              <h3>Track Employee Attendance</h3>
+              <p>Here you can see detailed attendance logs and trends.</p>
+              {/* Add more tracking details or components here */}
+            </div>
+          )}
+        </section>
+      </main>
+      <footer className="app-footer">
+        <p>© 2025 Employee Attendance Tracker. All rights reserved.</p>
+      </footer>
+    </div>
+  );
+};
+
+export default App;
