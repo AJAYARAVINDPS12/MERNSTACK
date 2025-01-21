@@ -5,5 +5,6 @@ const Gallery = () => {
             <img src="SECE.jpg" alt="SECE LOGO"/>
         </div>
     )
+    
 }
 export default Gallery;

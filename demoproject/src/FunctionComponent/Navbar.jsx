@@ -1,14 +1,10 @@
-import'../CSS/Navbar.css';
+import React from 'react';
+import '../CSS/Navbar.css';
 const Navbar = () => {
-    var styling = { 
-        textDecoration: "none", 
-        listStyleType: "none", 
-        textAlign: "center"
-    };
     return (
         <header>
-            <nav>   
-                <ol style={styling}>
+            <nav>
+                <ol>
                     <li>Home</li>
                     <li>About</li>
                     <li>Gallery</li>
@@ -18,4 +14,5 @@ const Navbar = () => {
         </header>
     );
 };
+
 export default Navbar;
