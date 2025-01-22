@@ -4,6 +4,7 @@ import Navbar from './FunctionComponent/Navbar';
 import Home from './FunctionComponent/Home';
 import About from './FunctionComponent/About';
 import Contact from './FunctionComponent/Contact';
+import Signup from './FunctionComponent/Signup';
 import Gallery from './FunctionComponent/Gallery';
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/gallery" element={<Gallery />} />
+        <Route path="/sign-up" element={<Signup />} />
       </Routes>
     </BrowserRouter>
   );
