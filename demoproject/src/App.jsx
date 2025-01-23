@@ -10,6 +10,10 @@ import Login from './FunctionComponent/Login';
 import UseState from './FunctionComponent/Hooks/UseState';
 import UseEffect from './FunctionComponent/Hooks/UseEffect';
 import UseEffectAPI from './FunctionComponent/Hooks/UseEffectAPI';  
+import UseReducer from './FunctionComponent/Hooks/UseReducer';
+import UseEffectAPIimage from './FunctionComponent/Hooks/UseEffectAPIimage';
+
+
 
 function App() {
   return (
@@ -25,6 +29,8 @@ function App() {
         <Route path="/usestate" element={<UseState />} />
         <Route path="/useeffect" element={<UseEffect />} />
         <Route path="/useeffectapi" element={<UseEffectAPI />} />
+        <Route path="/usereducer" element={<UseReducer />} />
+        <Route path="/useeffectapiimage" element={<UseEffectAPIimage />} />
         
       </Routes>
     </BrowserRouter>
