@@ -12,6 +12,8 @@ import UseEffect from './FunctionComponent/Hooks/UseEffect';
 import UseEffectAPI from './FunctionComponent/Hooks/UseEffectAPI';  
 import UseReducer from './FunctionComponent/Hooks/UseReducer';
 import UseEffectAPIimage from './FunctionComponent/Hooks/UseEffectAPIimage';
+import UseRef from './FunctionComponent/Hooks/UseRef';
+import UseMemo from './FunctionComponent/Hooks/UseMemo';
 
 
 
@@ -31,6 +33,8 @@ function App() {
         <Route path="/useeffectapi" element={<UseEffectAPI />} />
         <Route path="/usereducer" element={<UseReducer />} />
         <Route path="/useeffectapiimage" element={<UseEffectAPIimage />} />
+        <Route path="/useref" element={<UseRef />} />
+        <Route path="/usememo" element={<UseMemo />} />
         
       </Routes>
     </BrowserRouter>
