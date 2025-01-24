@@ -30,7 +30,15 @@ const Navbar = () => {
                     {dropdown && (
                     <ul>
                         <li><Link to="/useState" >useState</Link></li>
-                        <li>useEffect</li>
+                        <li><Link to="/useeffect" >UseEffect</Link></li>
+                        <li><Link to="/usecallback">UseCallback</Link></li>
+                        <li><Link to="/useeffectapi" >UseEffectAPI</Link></li>
+                        <li><Link to="/useeffectapiimage" >UseEffectAPIimage</Link></li>
+                        <li><Link to="/usereducer" >UseReducer</Link></li>
+                        <li><Link to="/useref" >UseRef</Link></li>
+                        <li><Link to="/usememo" >UseMemo</Link></li>
+                        <li><Link to="/list" >List</Link></li>
+                        
                     </ul>)}
                     </div>
                 </ol>
