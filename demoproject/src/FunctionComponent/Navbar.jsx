@@ -29,7 +29,7 @@ const Navbar = () => {
                     <span onMouseEnter={toggleDrop} onMouseLeave={toggleDrop}>Hooks</span>
                     {dropdown && (
                     <ul>
-                        <li><Link to="/useState" target='_blank'>useState</Link></li>
+                        <li><Link to="/useState" >useState</Link></li>
                         <li>useEffect</li>
                     </ul>)}
                     </div>
