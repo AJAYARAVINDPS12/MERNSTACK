@@ -14,6 +14,8 @@ import UseReducer from './FunctionComponent/Hooks/UseReducer';
 import UseEffectAPIimage from './FunctionComponent/Hooks/UseEffectAPIimage';
 import UseRef from './FunctionComponent/Hooks/UseRef';
 import UseMemo from './FunctionComponent/Hooks/UseMemo';
+import UseCallback from './FunctionComponent/Hooks/UseCallback';
+import ListItem from './FunctionComponent/Hooks/List';
 
 
 
@@ -35,6 +37,8 @@ function App() {
         <Route path="/useeffectapiimage" element={<UseEffectAPIimage />} />
         <Route path="/useref" element={<UseRef />} />
         <Route path="/usememo" element={<UseMemo />} />
+        <Route path="/usecallback" element={<UseCallback />} />
+        <Route path="/list" element={<ListItem />} />
         
       </Routes>
     </BrowserRouter>
