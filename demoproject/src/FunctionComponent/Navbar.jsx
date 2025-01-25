@@ -38,6 +38,7 @@ const Navbar = () => {
                         <li><Link to="/useref" >UseRef</Link></li>
                         <li><Link to="/usememo" >UseMemo</Link></li>
                         <li><Link to="/list" >List</Link></li>
+                        <li className="dropdown-item"><Link to="/student" className="dropdown-link">Student</Link></li>     
                         
                     </ul>)}
                     </div>
