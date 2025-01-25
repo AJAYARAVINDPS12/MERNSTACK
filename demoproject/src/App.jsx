@@ -18,6 +18,7 @@ import UseCallback from './FunctionComponent/Hooks/UseCallback';
 import ListItem from './FunctionComponent/Hooks/List';
 import ReactLifecycleMethods from './component/ReactLifecycleMethods';
 import Student from './FunctionComponent/Hooks/Student';
+import Memo from './FunctionComponent/Memorization/Memo';
 
 
 
@@ -43,6 +44,7 @@ function App() {
         <Route path="/list" element={<ListItem />} />
         <Route path="/  " element={<ReactLifecycleMethods />} />
         <Route path="/student" element={<Student />} />
+        <Route path="/memo" element={<Memo />} />
         
       </Routes>
     </BrowserRouter>
