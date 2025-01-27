@@ -23,6 +23,7 @@ import Memo from './FunctionComponent/Memorization/Memo';
 import LazyLoadingWithSuspense from './FunctionComponent/Memorization/LazyLoadingWithSuspense';
 import UseLocalStorage from './FunctionComponent/Hooks/UseLocalStorage';
 import HoC from './FunctionComponent/HoC/HoC';
+import DarkModeToggle from './FunctionComponent/Hooks/CustomHooks/DarkModeToggle';
 
 
 function App() {
@@ -45,13 +46,14 @@ function App() {
         <Route path="/usememo" element={<UseMemo />} />
         <Route path="/usecallback" element={<UseCallback />} />
         <Route path="/list" element={<ListItem />} />
-        <Route path="/  " element={<ReactLifecycleMethods />} />
+        <Route path="/react-lifecycle-methods" element={<ReactLifecycleMethods />} />
         <Route path="/student" element={<Student />} />
         <Route path="/memo" element={<Memo />} />
         
         <Route path="/lazy" element={<LazyLoadingWithSuspense/>}></Route>
         <Route path="/use-custom" element={<UseLocalStorage/>}></Route>
         <Route path="/hoc" element={<HoC/>}></Route>
+        <Route path="/customhooks2" element={<DarkModeToggle/>}></Route>
       </Routes>
     </BrowserRouter>
   );
