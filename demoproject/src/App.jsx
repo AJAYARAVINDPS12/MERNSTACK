@@ -20,6 +20,9 @@ import ReactLifecycleMethods from './component/ReactLifecycleMethods';
 import Student from './FunctionComponent/Hooks/Student';
 import Memo from './FunctionComponent/Memorization/Memo';
 
+import LazyLoadingWithSuspense from './FunctionComponent/Memorization/LazyLoadingWithSuspense';
+import UseLocalStorage from './FunctionComponent/Hooks/UseLocalStorage';
+import HoC from './FunctionComponent/HoC/HoC';
 
 
 function App() {
@@ -46,6 +49,9 @@ function App() {
         <Route path="/student" element={<Student />} />
         <Route path="/memo" element={<Memo />} />
         
+        <Route path="/lazy" element={<LazyLoadingWithSuspense/>}></Route>
+        <Route path="/use-custom" element={<UseLocalStorage/>}></Route>
+        <Route path="/hoc" element={<HoC/>}></Route>
       </Routes>
     </BrowserRouter>
   );
